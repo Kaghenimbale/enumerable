@@ -12,4 +12,3 @@ module Myenumerable
   end
 end
 
-# [1,3,5].my_all? { |e| puts e}

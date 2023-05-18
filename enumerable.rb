@@ -7,9 +7,6 @@ class Mylist
   include Myenumerable
 
   def each(&bee)
-    # for e in @list
-    #     yield e
-    # end
     @list.each(&bee)
   end
 end
