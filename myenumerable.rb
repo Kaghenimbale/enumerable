@@ -11,4 +11,3 @@ module Myenumerable
     each.filter(&block)
   end
 end
-
