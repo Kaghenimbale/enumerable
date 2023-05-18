@@ -24,7 +24,7 @@
 
 # 📖 [Create Enumerable] <a name="about-project"></a>
 
-**[Create Enumerable]** is a project that can be use to convert Morse code into real word that we can understand.
+**[Create Enumerable]** is a project that help us to learn about the use of enumerable inside classes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
