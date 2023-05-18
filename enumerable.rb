@@ -1,17 +1,26 @@
-# module MyEnumerable
-
-# end
+require_relative "myenumerable.rb"
 
 class Mylist
     def initialize(list)
         @list = list
     end
-    # include MyEnumerable
+    include Myenumerable
 
-    def each
-        yield @list
+    def each(&b)
+        # for e in @list
+        #     yield e
+        # end
+        @list.each(&b)
     end
 end
 
-mylist = Mylist.new([1,2,3,4,5])
-mylist.each { |list| puts list}
+mylist = Mylist.new([1,2,3,4])
+
+# puts mylist.all? {|e| e > 5 }
+
+puts mylist.all? {|e| e < 5}
+# puts mylist.all? {|e| e > 5}
+# puts mylist.any? {|e| e == 2}
+# puts mylist.any? {|e| e == 5}
+# puts mylist.filter {|e| e.even?}
+
